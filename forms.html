@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms&Inputs</title>
+    </head>
+    <body>
+        <h1>Forms&Inputs</h1>
+        <form action="https://www.google.ro/" target="_blank" role="search">
+            <fieldset >
+                <legend><h3>Search on Google</h3></legend>
+                <input type="search"  name="q" placeholder="Looking for..." aria-label="Search through site content" />
+                <input type="submit" value="SEARCH" />
+            </fieldset> 
+        </form>
+        <hr />
+        <br />
+        <form>
+            <fieldset>
+                <legend><b>Pizza order</b></legend>
+                <b>Your name</b>: <input type="text" name="name" placeholder="First name + Last Name" min="3" max="10" required value="Jon Doe"/><br /><br />
+                <b>Your email</b>: <input type="email" name="email" placeholder="name@domain.com" required/><br /><br />
+                <p><b>Topping:</b></p>
+                <input type="radio" id="supreme" name="topping" value="Supreme" />
+                <label for="supreme">Supreme</label>
+                <input type="radio" id="veggie" name="topping" value="Vegetarian" />
+                <label for="veggie">Vegetarian</label>
+                <input type="radio" id="hawaii" name="topping" value="Hawaian" />
+                <label for="hawaii">Hawaian</label><br /><br />
+                <label for="sauce"><b>Sauce:</b></label>
+                <select id="sauce" name="sauce" multiple>
+                    <option value="tomato">Tomato</option>
+                    <option value="mayo">Mayo</option>
+                    <option value="sweetchilli">Sweet chilli</option>
+                </select><br /><br />
+                <p><b>Extras:</b></p>
+                <input type="checkbox" name="cheese" id="cheese" />
+                <label for="cheese">Cheese</label>
+                <input type="checkbox" name="onions" id="onions" />
+                <label for="onions">Onions</label>
+                <input type="checkbox" name="olives" id="olives" />
+                <label for="olives">Olives</label><br /><br />
+                <label for="number"><b>Phone number:</b></label>
+                <input type="number" id="number" name="number" placeholder="07..." value="0733222440"/><br /><br />
+                <label for="date"><b>Delivery date:</b></label>
+                <input type="date" id="date" name="date " />
+                <p><b>Delivery instructions</b></p>
+                <textarea name="instructions" rows="10" cols="50" placeholder="Tell us your address and any other instructions" required></textarea><br /><br />
+                <input type="submit" value="Send order" />
+                <input type="reset" value="Reset dates" />
+                
+
+            </fieldset>
+        </form>
+    </body>
+</html>

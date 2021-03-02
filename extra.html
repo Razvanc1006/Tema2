@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Extra homework</title>
+    </head>
+    <body>
+        <h1>Travel reservation form</h1>
+        <h3>*denotes mandatory</h3>
+        <form action="server.html" method="POST">
+           <p>Full name*:</p>
+           <input type="text" name="fullname" placeholder="FirstName LastName" required />
+           <p>Email address*:</p>
+           <input type="email" name="mail" placeholder="EMAIL_ADDRESS" required /><br /><br />
+
+           <label for="package">Select Tour Package*</label> <br />
+           <select name="package" id="package" required size="2">
+               <option value="Basic" >Basic</option>
+               <option value="Exclusive" >Exclusive</option>
+           </select><br /><br />
+           <p>Arrival date*:</p>
+           <input type="date" name="arrival_date"  required />
+           <p>Number of persons*:</p>
+           <input type="number" name="number_of_persons" placeholder="UNKNOWN_TYPE" />
+           <p>What would you want to avail?*</p>
+           <input type="checkbox" name="avail" id="boarding" />
+           <label for="boarding">Boarding</label> <br />
+           <input type="checkbox" name="avail" id="fooding" />
+           <label for="fooding">Fooding</label><br />
+           <input type="checkbox" name="avail" id="sight" />
+           <label for="sight">Sight seeing</label>
+           <p>Discount Coupon code:</p>
+           <input type="text" name="code" placeholder="UNKNOWN_TYPE" />
+           <p>Terms and conditions*:</p>
+           <input type="radio" name="terms" id="agree" checked required />
+           <label for="agree">I agree</label>
+           <input type="radio" name="terms" id="disagree" />
+           <label for="disagree">I disagree</label><br /><br />
+           <button>Complete reservation</button>
+           
+
+        </form>
+    </body>
+</html>
